@@ -62,10 +62,12 @@ month_count
 martain_days = df['sol'].nunique()
 martain_days
 ``` 
-- Which month, on average, has the lowest temperature? The highest?: The coldest month is month #3 and the warmest month is month #8.
+- Which month, on average, has the lowest temperature? The highest?:
+### The coldest month is month #3 and the warmest month is month #8.
 ![image](https://github.com/Faith-Hall/mars-challenge/assets/135525815/a68829f5-9fcb-4df3-9282-13f0fa1c0f6c)
 
-- Which month, on average, has the lowest atmospheric pressure? The highest?: The lowest atmospheric pressure is month #6 and the highest is month #9
+- Which month, on average, has the lowest atmospheric pressure? The highest?:
+### The lowest atmospheric pressure is month #6 and the highest is month #9
   ![image](https://github.com/Faith-Hall/mars-challenge/assets/135525815/a9e03ac2-237a-49f3-bbe3-e531f82c343e)
 
 - How many terrestrial days exist in a Martian year? A visual estimate within 25% was made.
