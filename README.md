@@ -52,12 +52,14 @@ df['min_temp']=df['min_temp'].astype(float)
 df['pressure']=df['pressure'].astype(float)
 ```
 Step 5: I analyzed the data: 
-- How many months exist on Mars: 12 months
+- How many months exist on Mars:
+### 12 months
 ```
 month_count = df['month'].nunique()
 month_count
 ```
-- How many Martian days' worth of data are there?: 1,867 days
+- How many Martian days' worth of data are there?:
+### 1,867 days
 ```
 martain_days = df['sol'].nunique()
 martain_days
