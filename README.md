@@ -19,4 +19,24 @@ for text_element in text_elements:
 ```
 ---
 ## Part 2: Scrape and Analyze Mars Weather Data
-For the second part of this challenge I visited the [Mars Temperature Data Site](https://static.bc-edx.com/data/web/mars_facts/temperature.html)
+For the second part of this challenge I visited the [Mars Temperature Data Site](https://static.bc-edx.com/data/web/mars_facts/temperature.html) and inspected the page to identify the elements that I needed to scrape.  I created the Beautiful Soup object and used it to scrape the data in the HTML table.  
+```
+soup = soup(html, 'html.parser')
+```
+Then I scrapted the data to create a list of rows using a for loop: 
+```
+for row in rows:
+    table_data = row.find_all('td')
+    id = table_data[0].text
+    terrestrial_date = table_data[1].text
+    sol = table_data[2].text
+    ls = table_data[3].text
+    month = table_data[4].text
+    min_temp = table_data[5].text
+    pressure = table_data[6].text
+    list.append([id, terrestrial_date, sol, ls, month, min_temp, pressure])
+```
+I Created a Pandas DataFrame by using the list of rows and colum names:
+```
+df = pd.DataFrame(list, columns=['id', 'terrestrial_date', 'sol', 'ls', 'month', 'min_temp', 'pressure'])
+```
